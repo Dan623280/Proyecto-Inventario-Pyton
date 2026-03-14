@@ -1,5 +1,8 @@
 # Sistema de Registro de Productos
 
+## Diagrama de Flujo
+![alt text](image.png)
+
 ## Descripción
 
 Este proyecto es un programa simple desarrollado en **Python** que permite registrar productos desde la terminal.
