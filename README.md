@@ -1,177 +1,90 @@
-# Sistema de Registro de Productos
+# 🧾 Sistema de Inventario en Python
 
+## 📌 Descripción
 
-## Descripción
+Este proyecto es un sistema de inventario desarrollado en Python que
+permite registrar, visualizar y gestionar productos desde la consola.
 
-Este proyecto es un programa simple desarrollado en **Python** que permite registrar productos desde la terminal.
+⚠️ Esta es la versión actualizada del proyecto, ubicada en la rama:
 
-El usuario agregar productos del inventario registrar 
-El usuario puede ingresar los siguientes datos:
+👉 feature/H2_Modulo-2
 
-- Nombre del producto
-- Precio unitario
-- Cantidad
+------------------------------------------------------------------------
 
-El programa calcula automáticamente el **costo total** multiplicando el precio por la cantidad y muestra la información en pantalla.
+## 🚀 ¿Cómo acceder a esta versión del proyecto?
 
-Además, el repositorio incluye un **diagrama de flujo en formato PDF** que representa la lógica del programa.
+Para trabajar con esta versión desde tu computador, sigue estos pasos:
 
----
+### 1. Clonar el repositorio
 
-## Requisitos
+``` bash
+git clone https://github.com/Dan623280/Proyecto-Inventario-Pyton.git
+```
 
-Para ejecutar este programa necesitas tener instalado:
+------------------------------------------------------------------------
 
-- **Python 3**
+### 2. Entrar a la carpeta del proyecto
 
-Puedes verificar si Python está instalado ejecutando el siguiente comando en la terminal:
+``` bash
+cd Proyecto-Inventario-Pyton
+```
 
+------------------------------------------------------------------------
 
-python --version
+### 3. Cambiar a la rama correcta
 
+``` bash
+git checkout feature/H2_Modulo-2
+```
 
-Si Python está instalado, el sistema mostrará la versión instalada.
+------------------------------------------------------------------------
 
----
+### 4. Descargar los archivos de la rama
 
-# Cómo clonar el repositorio
+``` bash
+git pull origin feature/H2_Modulo-2
+```
 
-Este proyecto se encuentra en la rama **H1** del repositorio.
+------------------------------------------------------------------------
 
-Para clonar el repositorio ejecuta el siguiente comando:
+## ▶️ Ejecutar el programa
 
+Una vez dentro de la rama correcta, ejecuta:
 
-git clone https://github.com/Dan623280/Historia-de-Usuario.git
-
-
-Luego entra a la carpeta del proyecto:
-
-
-cd Historia-de-Usuario
-
-
----
-
-# Cómo traer la rama H1
-
-Después de clonar el repositorio, debes cambiarte a la rama **H1** donde se encuentra el proyecto.
-
-Primero descarga las ramas del repositorio:
-
-
-git fetch
-
-
-Luego cambia a la rama **H1**:
-
-
-git checkout H1
-
-
-Puedes verificar que estás en la rama correcta con:
-
-
-git branch
-
-
-La terminal mostrará algo similar a:
-
-
-H1
-main
-
-
-El asterisco (*) indica la rama en la que te encuentras.
-
----
-
-# Cómo ejecutar el programa
-
-Una vez dentro de la carpeta del proyecto y ubicado en la rama **H1**, ejecuta el siguiente comando:
-
-
+``` bash
 python inventario.py
+```
 
+------------------------------------------------------------------------
 
-El programa mostrará un mensaje de bienvenida y solicitará al usuario ingresar los datos del producto.
+## 📁 Archivos del proyecto
 
----
+Esta versión incluye los siguientes módulos:
 
-# Cómo utilizar el programa
+-   inventario.py → Archivo principal del sistema
+-   Menu.py → Menú del programa
+-   Lista.py → Manejo de productos
+-   Registro.py → Registro de datos
+-   Mostrar.py → Visualización
+-   Funciones_error.py → Validaciones
+-   Estadisticas.py → Cálculos
+-   Color.py → Colores en consola
 
-El programa solicitará los siguientes datos:
+------------------------------------------------------------------------
 
-1. Nombre del producto  
-2. Precio unitario  
-3. Cantidad del producto  
+## ⚠️ Nota importante
 
-Después de ingresar los datos, el sistema mostrará la información del producto y el costo total.
+Si no cambias a la rama feature/H2_Modulo-2, no podrás ver esta versión
+del proyecto, ya que el main contiene una versión anterior.
 
-Ejemplo de ejecución:
+------------------------------------------------------------------------
 
+## 👤 Autor
 
-Nombre del producto: Lapiz
-Precio Unitario del producto: 500
-Cantidad: 3
-Total: 1500
+Daniel Alvarez
 
+------------------------------------------------------------------------
 
----
+## 🔗 Repositorio
 
-# Manejo de errores
-
-El programa incluye validación de datos para evitar errores.
-
-- Si el usuario introduce un valor inválido en el **precio**, el sistema mostrará un mensaje de error.
-- Si el usuario introduce un valor inválido en la **cantidad**, el programa solicitará nuevamente el dato.
-
-Esto garantiza que los cálculos se realicen correctamente.
-
----
-
-# Diagrama de flujo del programa
-
-El repositorio incluye un archivo con el diagrama de flujo del sistema:
-
-
-M1S1.drawio.pdf
-
-
-## Cómo abrir el archivo PDF
-
-1. Descarga el archivo desde el repositorio.
-2. Haz doble clic en el archivo **M1S1.drawio.pdf**.
-3. El archivo se abrirá con cualquier lector de PDF como:
-
-- Adobe Acrobat Reader
-- Google Chrome
-- Microsoft Edge
-- Cualquier visor de PDF del sistema operativo
-
-Este diagrama muestra las tres fases del programa:
-
-- Entrada de datos
-- Procesamiento
-- Salida de resultados
-
----
-
-# Estructura del proyecto
-
-
-Historia-de-Usuario
-│
-├── inventario.py
-├── README.md
-└── M1S1.drawio.pdf
-
-
-**inventario.py** → Programa principal del sistema  
-**README.md** → Documentación del proyecto  
-**M1S1.drawio.pdf** → Diagrama de flujo del programa
-
----
-
-# Autor
-
-**Daniel Elias Alvarez Diaz**
+👉 https://github.com/Dan623280/Proyecto-Inventario-Pyton.git
