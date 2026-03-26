@@ -1,3 +1,4 @@
+#Traer colores
 from Color import rojo, reset, verde
 
 #Mostrar menu y pedir Dato del menu
@@ -11,9 +12,19 @@ from Mostrar import Mostrar
 
 #importa la funcion de estadistica
 from Estadisticas import Estadistica
+
+#importa la funcion para buscar
+from Buscar import buscar
+
+#importar actualizar producto
+from actualizar import actualizar
+
+from Eliminar import eliminar
+
+#variable de confirmacion
 confirmo = "Y"
 
-
+#mientras que la confirmacion sea verdadera
 while confirmo == "Y":
 
     # Traer el menu y pedir numero
@@ -26,15 +37,31 @@ while confirmo == "Y":
         Agregar_Producto()
 
     elif numero == 2:
+        
         #Ejecuta la funcion Mostrar producto
         Mostrar()
 
     elif numero == 3:
+        
+        #Ejecuta la funcion Buscar producto
+        buscar()
+
+    elif numero == 4:
+        
+        #Ejecuta la funcion actualizar producto
+        actualizar()
+
+    elif numero == 5:
+        
+        #Ejecuta la funcion actualizar producto
+        eliminar()
+
+    elif numero == 6:
 
         #ejecuta la funcion de estadisticas
         Estadistica()
 
-    elif numero == 4:
+    elif numero == 9:
 
         #Mostrar mensaje de salida
         print(verde+"==================================================")
@@ -48,6 +75,4 @@ while confirmo == "Y":
         print(rojo+ "==================")
         print("=Numero no valido=")
         print("=================="+reset)
-
-
 

@@ -21,11 +21,11 @@ def Mostrar():
     else:
 
         #recorrer Lista
-        for elemento in Inventario_Dict:
+        for indice,elemento in enumerate(Inventario_Dict):
 
             #recorrer producto
-            print(f"Producto: {elemento['Nombre']}, Precio: {elemento['Precio']}, Cantidad: {elemento['Cantidad']}")
+            print(f"Indice: {indice}, Producto: {elemento['Nombre']}, Precio: {elemento['Precio']}, Cantidad: {elemento['Cantidad']}")
 
     
 # Para llamar
-# from Mostrar import Mostrar
+# from funcionesCRUD.Mostrar import Mostrar

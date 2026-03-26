@@ -14,8 +14,13 @@ def menu_principal():
     print(azul+"")
     print("1. Agregar producto")
     print("2. Mostrar inventario")
-    print("3. Calcular estadísticas")
-    print("4. Salir")
+    print("3. Buscar Producto")
+    print("4. Actualizar Producto")
+    print("5. Eliminar Producto")# En desarrollo
+    print("6. Calcular estadísticas")
+    print("7. Guardar CSV")# En desarrollo
+    print("8. Cargar CSV")# En desarrollo
+    print("9. Salir")
     print(""+reset)
 
     # Preguntar Opcion a elegir

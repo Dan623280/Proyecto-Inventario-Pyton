@@ -1,12 +1,15 @@
 
-#Importar la lista donde estan los productos
+# Importar la lista donde estan los productos
 from Lista import Inventario_Dict
 
-#Trae la Funciones que verifican si los datos son correctos
+# Trae la Funciones que verifican si los datos son correctos
 from Funciones_error import error_string, error_number_int, error_number_float
 
 # Trae las variables de los colores
 from Color import azul, reset
+
+from autenticacion import autenticacion_nombre
+
 
 #-------------------------------------------------
 # Agregar Producto
@@ -30,7 +33,7 @@ def Agregar_Producto():
     #-------------------------------------------------
 
     # Nombre del producto
-    nombre = error_string("nombre del Producto: ")
+    nombre = autenticacion_nombre("nombre del producto: ")
 
     # Precio unitario
     precio = error_number_float("precio unitario del Producto: ")
@@ -40,17 +43,20 @@ def Agregar_Producto():
 
 
     #-------------------------------------------------
-    # CÁLCULO DEL COSTO TOTAL
+    # Calculo del costo total
     #-------------------------------------------------
 
     costo_total = precio * cantidad
+
 
     #-------------------------------------------------
     # Guardar en el Inventario     
     #-------------------------------------------------
 
     producto = {"Nombre": nombre,"Precio": precio, "Cantidad": cantidad}
+    
     Inventario_Dict.append(producto)
+
 
     #-------------------------------------------------
     # MOSTRAR RESULTADOS
