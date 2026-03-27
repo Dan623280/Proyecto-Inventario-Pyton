@@ -13,7 +13,7 @@ def error_string(var):
         
         try:
 
-            valor = input(f"Colocar {var}")
+            valor = input(f"{var}")
             return valor
         
         except:

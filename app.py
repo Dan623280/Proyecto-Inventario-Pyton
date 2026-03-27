@@ -61,6 +61,16 @@ while confirmo == "Y":
         #ejecuta la funcion de estadisticas
         Estadistica()
 
+    #En desarrollo
+    elif numero == 7:
+
+        print("En desarrollo")
+    
+    #En desarrollo
+    elif numero == 8:
+
+        print("En desarrollo")
+
     elif numero == 9:
 
         #Mostrar mensaje de salida

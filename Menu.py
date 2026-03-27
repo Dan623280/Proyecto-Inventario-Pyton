@@ -11,17 +11,17 @@ from Funciones_error import error_number_int
 def menu_principal():
     
     #Mostrar menu
-    print(azul+"")
+    print(azul + "")
     print("1. Agregar producto")
     print("2. Mostrar inventario")
     print("3. Buscar Producto")
     print("4. Actualizar Producto")
-    print("5. Eliminar Producto")# En desarrollo
+    print("5. Eliminar Producto")
     print("6. Calcular estadísticas")
     print("7. Guardar CSV")# En desarrollo
     print("8. Cargar CSV")# En desarrollo
     print("9. Salir")
-    print(""+reset)
+    print("" + reset)
 
     # Preguntar Opcion a elegir
     pregunta = error_number_int("el numero de la acción que desea realizar: ")
