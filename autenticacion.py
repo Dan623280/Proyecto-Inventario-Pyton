@@ -7,6 +7,7 @@ from Color import rojo, reset, verde
 
 def autenticacion(valor):
 
+    """Esta funcion verifica si el nombre ya existe"""
     for elemento in Inventario_Dict:
 
         if elemento['Nombre'] == valor:
@@ -15,6 +16,7 @@ def autenticacion(valor):
 
 def autenticacion_nombre(var):
 
+    """Verifica si existe el nombre y si el nombre no existe devuelve el nombre de lo contrario imprime mensaje de error"""
     while True:
             
         nombre = error_string(f"{var}")
@@ -41,6 +43,7 @@ def autenticacion_nombre(var):
 
 def autenticacion_indice():
 
+    """Autentica si el indice existe, si exciste devuelve el numero"""
     while True:
 
         numero = error_number_int("Indice: ")

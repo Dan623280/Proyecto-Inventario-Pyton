@@ -10,6 +10,9 @@ from  Color import rojo, reset, verde
 
 def actualizar():
 
+    """
+    Esta funcion Verific los datos y si pasa la verificacion actualiza los datos
+    """
     print("")
     print("Coloque el indice del producto que quiere actualizar")
     print("")

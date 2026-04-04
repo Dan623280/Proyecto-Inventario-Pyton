@@ -2,10 +2,10 @@
 
 #Lista
 #{'Nombre': '', 'Precio': , 'Cantidad': }
+
+"""Esta es la lista donde se guardan los datos"""
 Inventario_Dict = [
-    {'Nombre': 'Juan', 'Precio': 3000, 'Cantidad': 2},
-    {'Nombre': 'sapo', 'Precio': 200, 'Cantidad': 5},
-    {'Nombre': 'Luis', 'Precio': 20000, 'Cantidad': 2}
+   
     ]
 
 #Para llamar

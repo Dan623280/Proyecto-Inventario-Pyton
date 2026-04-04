@@ -7,7 +7,7 @@ from autenticacion import autenticacion
 from  Color import rojo, reset
 
 def buscar():
-
+    """Busca Por nombre si el nombre existe retorna los datos de lo contrario imprime un mensaje de error"""
     valor = error_string("nombre de producto: ")
 
     confir = autenticacion(valor)

@@ -10,6 +10,8 @@ from Color import rojo, reset
 
 def Mostrar():
 
+    
+    """Muestra los datos de la lista del Inventario"""
     #Vericar que el inventario tenga datos
     if len(Inventario_Dict) == 0:
 

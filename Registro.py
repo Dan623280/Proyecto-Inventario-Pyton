@@ -17,6 +17,7 @@ from autenticacion import autenticacion_nombre
 
 def Agregar_Producto():
 
+    """Este es para agregar los productos"""
     #-------------------------------------------------
     # MENSAJE DE BIENVENIDA
     #-------------------------------------------------

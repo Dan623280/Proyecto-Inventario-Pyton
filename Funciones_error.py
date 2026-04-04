@@ -8,6 +8,7 @@ from Color import rojo, reset
 # Función para validar texto
 def error_string(var):
 
+    """Aqui se valida que el dato que coloque el usuario sea string si no envia un error"""
     #inicio del ciclo
     while True:
         
@@ -24,7 +25,7 @@ def error_string(var):
 # Función para validar números enteros
 def error_number_int(var):
 
-    #inicio del ciclo
+    """Aqui se valida que el dato que coloque el usuario sea Entero si no envia un error"""
     while True:
 
         try:
@@ -46,6 +47,7 @@ def error_number_int(var):
 
 # Función para validar números decimales
 def error_number_float(var):
+    """Aqui se valida que el dato que coloque el usuario sea Flotante si no envia un error"""
     #inicio del ciclo
     while True:
 

@@ -1,10 +1,16 @@
 from Lista import Inventario_Dict
+from Color import verde, reset
 import csv
 
 
-
-with open('inventario.csv', mode='w', newline='', encoding='utf-8') as file:
-    fieldnames = Inventario_Dict[0].keys()  # Usa las claves del primer diccionario
-    writer = csv.DictWriter(file, fieldnames=fieldnames)
-    writer.writeheader()
-    writer.writerows(Inventario_Dict)   
+def Guardar():
+    """Guarda los datos registrados de la lista al csv"""
+    with open('inventario.csv', mode='w', newline='', encoding='utf-8') as file:
+        fieldnames = Inventario_Dict[0].keys()  # Usa las claves del primer diccionario
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(Inventario_Dict)   
+        
+    print(verde+"=================================")
+    print("= Datos guardados correctamente =")
+    print("================================="+reset)

@@ -10,6 +10,7 @@ from Funciones_error import error_number_int
 
 def menu_principal():
     
+    """Este muestra el menu y pide al usuario que elija una opcion luego retorna esa opcion"""
     #Mostrar menu
     print(azul + "")
     print("1. Agregar producto")
@@ -18,8 +19,8 @@ def menu_principal():
     print("4. Actualizar Producto")
     print("5. Eliminar Producto")
     print("6. Calcular estadísticas")
-    print("7. Guardar CSV")# En desarrollo
-    print("8. Cargar CSV")# En desarrollo
+    print("7. Guardar CSV")
+    print("8. Cargar CSV")
     print("9. Salir")
     print("" + reset)
 

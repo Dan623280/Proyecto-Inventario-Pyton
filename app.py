@@ -1,6 +1,9 @@
+from Lista import Inventario_Dict
+
 #Traer colores
 from Color import rojo, reset, verde
 
+from Lista import Inventario_Dict
 #Mostrar menu y pedir Dato del menu
 from Menu import menu_principal
 
@@ -11,7 +14,8 @@ from Registro import Agregar_Producto
 from Mostrar import Mostrar
 
 #importa la funcion de estadistica
-from Estadisticas import Estadistica
+from Estadisticas import calcular_estadisticas
+
 
 #importa la funcion para buscar
 from Buscar import buscar
@@ -20,6 +24,10 @@ from Buscar import buscar
 from actualizar import actualizar
 
 from Eliminar import eliminar
+
+from cargar_inventario import cargar
+
+from guardar_csv import Guardar
 
 #variable de confirmacion
 confirmo = "Y"
@@ -59,17 +67,23 @@ while confirmo == "Y":
     elif numero == 6:
 
         #ejecuta la funcion de estadisticas
-        Estadistica()
 
+        stats = calcular_estadisticas(Inventario_Dict)
+
+        if stats:
+            print(stats)
+        else:
+            print("Inventario vacío")
+            
     #En desarrollo
     elif numero == 7:
 
-        print("En desarrollo")
+        Guardar()
     
     #En desarrollo
     elif numero == 8:
 
-        print("En desarrollo")
+        cargar()
 
     elif numero == 9:
 
