@@ -1,7 +1,13 @@
+#importa el modulo csv
 import csv
 
+# Lista inventario
 from Lista import Inventario_Dict
+
+# importa las funciones de error al ingresar dato
 from Funciones_error import error_string
+
+#Traer colores
 from Color import rojo, reset, verde
 
 # -------------------------------------------------
@@ -19,6 +25,7 @@ def Guardar():
     - Muestra la ruta si se guarda correctamente
     """
 
+ 
     if not Inventario_Dict:
         
         print(rojo + "El inventario está vacío, no hay datos para guardar." + reset)
@@ -46,7 +53,9 @@ def Guardar():
         print(verde + f"Inventario guardado en: {ruta}" + reset)
 
     except PermissionError:
-        print(rojo + "Error: No tienes permisos para escribir el archivo." + reset)
+        print(rojo + "-------------------------------------------------------")
+        print("- Error: No tienes permisos para escribir el archivo. -")
+        print("-------------------------------------------------------"+ reset)
 
     except Exception as e:
         print(rojo + f"Error inesperado al guardar: {e}" + reset)
@@ -71,7 +80,9 @@ def Valor():
         if valor in ["S", "N"]:
             return valor
         else:
-            print(rojo + "Opción no válida" + reset)
+            print(rojo + "--------------------")
+            print("- Opción no válida -")
+            print("--------------------" + reset)
 
 
 # -------------------------------------------------
@@ -107,7 +118,10 @@ def cargar():
 
             # 🔴 VALIDACIÓN EXACTA DEL ENCABEZADO
             if encabezado != ["Nombre", "Precio", "Cantidad"]:
-                print(rojo + "Error: Encabezado inválido." + reset)
+                
+                print(rojo + "-------------------------------" + reset)
+                print(rojo + "- Error: Encabezado inválido. -" + reset)
+                print(rojo + "-------------------------------" + reset)
                 return
 
             opcion = Valor()
@@ -161,8 +175,9 @@ def cargar():
 
             else:
                 Inventario_Dict.extend(lista_temporal)
-
-            print(verde + "Datos cargados correctamente." + reset)
+            print(verde + "---------------------------------" + reset)
+            print(verde + "- Datos cargados correctamente. -" + reset)
+            print(verde + "---------------------------------" + reset)
 
             if errores > 0:
                 print(rojo + f"{errores} filas inválidas omitidas." + reset)

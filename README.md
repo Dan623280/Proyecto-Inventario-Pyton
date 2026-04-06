@@ -64,54 +64,177 @@ El programa al iniciar muestra un menu Dependiendo de la accion que el usuario d
 
 ## Agregar producto
 
-Si el usuario desea agregar producto selecciona en el menu el numero 1, 
-automaticamente el programa le pedira colocar el nombre, el precio y la cantidad. 
-
 ![alt text](image-1.png)
 
-Al final el programa mostrara los datos registrados y el total a pagar.
+Descripción:
+
+    Esta función permite al usuario ingresar un producto desde la terminal,
+    solicitando su nombre, precio unitario y cantidad disponible. El sistema
+    valida cada entrada utilizando funciones auxiliares para asegurar que los
+    datos sean correctos (nombre único, valores numéricos positivos, etc.).
+
+Proceso:
+
+    1. Muestra un mensaje de bienvenida.
+
+    2. Solicita el nombre del producto (validando que no exista previamente).
+
+    3. Solicita el precio unitario (número positivo).
+
+    4. Solicita la cantidad disponible (entero positivo).
+
+    5. Calcula el costo total (precio * cantidad).
+
+    6. Guarda el producto en la estructura de datos del inventario.
+
+    7. Muestra un resumen del producto registrado.
+
+
+Notas:
+
+    - Utiliza funciones de validación para evitar errores en la entrada de datos.
+
+    - El inventario se gestiona mediante una lista de diccionarios.
+
+    - Cada producto contiene las claves: 'Nombre', 'Precio' y 'Cantidad'.
 
 ## Mostrar inventario
 
-En este apartado se observa todos los productos registrados con su indice
-
 ![alt text](image-2.png)
+
+Muestra en consola todos los productos almacenados en el inventario.
+
+Descripción:
+
+    Esta función recorre la lista del inventario y presenta cada producto
+    junto con su índice, nombre, precio y cantidad disponible. El índice
+    mostrado permite al usuario identificar la posición del producto para
+    operaciones posteriores como actualizar o eliminar.
+
+Comportamiento:
+
+    - Si el inventario está vacío, muestra un mensaje indicando que no hay datos.
+
+    - Si existen productos, los lista en formato ordenado con su respectivo índice.
+
+  
+Notas:
+
+    - Utiliza la función enumerate() para generar los índices automáticamente.
+
+    - El inventario debe estar estructurado como una lista de diccionarios.
+
+    - Cada producto contiene las claves: 'Nombre', 'Precio' y 'Cantidad'.
 
 ## Buscar Producto
 
-En este espacio muestra el dato del producto por el nombre
-
 ![alt text](image-3.png)
+
+Busca un producto por su nombre dentro del inventario.
+
+    - Si el producto existe, muestra sus datos (Nombre, Precio y Cantidad).
+
+    - Si no existe, muestra un mensaje de error.
 
 ## Actualizar Producto
 
-En este apartado se muestra los productos con su indice y se puede actualizar el producto por el indice
-
 ![alt text](image-4.png)
+
+Actualiza la información de un producto existente en el inventario.
+
+Descripción:
+
+    Esta función permite modificar los datos de un producto previamente
+    registrado, identificándolo mediante su índice. El usuario puede cambiar
+    el nombre, el precio unitario y la cantidad disponible del producto.
+
+Proceso:
+
+    1. Muestra un mensaje indicando la acción a realizar.
+
+    2. Presenta el inventario actual con sus índices.
+
+    3. Solicita un índice válido del producto a actualizar.
+
+    4. Solicita los nuevos datos (nombre, precio y cantidad).
+
+    5. Valida cada entrada mediante funciones auxiliares.
+
+    6. Actualiza la información del producto en el inventario.
+
+    7. Muestra un mensaje de confirmación.
+
+
+Notas:
+
+    - Depende de funciones de validación para garantizar datos correctos.
+
+    - El inventario está estructurado como una lista de diccionarios.
+
+    - Cada producto contiene las claves: 'Nombre', 'Precio' y 'Cantidad'.
+
+    - El índice es fundamental para identificar el producto dentro de la lista.
 
 ## Eliminar Producto
 
-En este apartado se muestra los productos con su indice y se puede Elminar el producto por el indice
-
 ![alt text](image-5.png)
+
+Elimina un producto del inventario utilizando su índice.
+
+    
+Flujo de la función:
+
+    1. Verifica si el inventario está vacío.
+    
+    2. Muestra un mensaje indicando al usuario qué debe hacer.
+
+    3. Muestra el inventario actual (para que el usuario vea los índices).
+
+    4. Solicita un índice válido mediante la función de autenticación.
+
+    5. Elimina el producto correspondiente a ese índice.
+
+    6. Muestra un mensaje de confirmación.
 
 ## Calcular estadistica
 
-![alt text](image-6.png)
+![alt text](image-12.png)
 
-En esta parte se muestra
+Calcula y muestra estadísticas del inventario.
 
-unidades_totales = suma de cantidad
-valor_total = suma de precio * cantidad
-producto_mas_caro (nombre y precio)
-producto_mayor_stock (nombre y cantidad)
+Funcionalidades:
+
+    - Calcula el total de unidades disponibles en el inventario.
+
+    - Calcula el valor total del inventario (Precio * Cantidad).
+
+    - Identifica el producto más caro.
+
+    - Identifica el producto con mayor cantidad en stock.
+
+Retorna:
+
+    dict | None:
+
+            - Retorna un diccionario con las estadísticas si hay datos.
+
+            - Retorna None si el inventario está vacío.
 
 ## Guardar CSV
 
-Al seleccionar esta opcion se guada los datos de la lista del inventario al csv
-
 ![alt text](image-7.png)
 
+Guarda el inventario en un archivo CSV.
+
+Reglas:
+
+    - Usa encabezado: Nombre, Precio, Cantidad
+
+    - Valida que el inventario no esté vacío
+
+    - Maneja errores de escritura/permisos
+    
+    - Muestra la ruta si se guarda correctamente
 
 ## Cargar CSV
 
@@ -132,7 +255,7 @@ Si un nombre ya existe, actualiza precio/cantidad u omite (define una política 
 ------------------------------------------------------------------------
 ## 👤 Autor
 
-Daniel Alvarez
+Daniel Elias Alvarez Diaz
 
 ------------------------------------------------------------------------
 

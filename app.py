@@ -1,9 +1,8 @@
-from Lista import Inventario_Dict
+
 
 #Traer colores
 from Color import rojo, reset, verde
 
-from Lista import Inventario_Dict
 #Mostrar menu y pedir Dato del menu
 from Menu import menu_principal
 
@@ -16,15 +15,16 @@ from Mostrar import Mostrar
 #importa la funcion de estadistica
 from Estadisticas import calcular_estadisticas
 
-
 #importa la funcion para buscar
 from Buscar import buscar
 
 #importar actualizar producto
 from actualizar import actualizar
 
+#importa la funcion para eliminar por indice
 from Eliminar import eliminar
 
+#importa la funcion para Guardar y cargar
 from archivo import Guardar, cargar
 
 #variable de confirmacion
@@ -72,11 +72,13 @@ while confirmo == "Y":
     #En desarrollo
     elif numero == 7:
 
+        # Ejecuta la funcion para guardar
         Guardar()
     
     #En desarrollo
     elif numero == 8:
 
+        #ejecuta la funcion para cargar
         cargar()
 
     elif numero == 9:

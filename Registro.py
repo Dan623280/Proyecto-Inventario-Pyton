@@ -17,10 +17,36 @@ from autenticacion import autenticacion_nombre
 
 def Agregar_Producto():
 
-    """Este es para agregar los productos"""
-    #-------------------------------------------------
+    """
+    Registra un nuevo producto en el inventario.
+
+    Descripción:
+    Esta función permite al usuario ingresar un producto desde la terminal,
+    solicitando su nombre, precio unitario y cantidad disponible. El sistema
+    valida cada entrada utilizando funciones auxiliares para asegurar que los
+    datos sean correctos (nombre único, valores numéricos positivos, etc.).
+
+    Proceso:
+    1. Muestra un mensaje de bienvenida.
+    2. Solicita el nombre del producto (validando que no exista previamente).
+    3. Solicita el precio unitario (número positivo).
+    4. Solicita la cantidad disponible (entero positivo).
+    5. Calcula el costo total (precio * cantidad).
+    6. Guarda el producto en la estructura de datos del inventario.
+    7. Muestra un resumen del producto registrado.
+
+    Parámetros:
+    No recibe parámetros.
+
+    Retorna:
+    No retorna ningún valor. La información se almacena directamente en el inventario.
+
+    Notas:
+    - Utiliza funciones de validación para evitar errores en la entrada de datos.
+    - El inventario se gestiona mediante una lista de diccionarios.
+    - Cada producto contiene las claves: 'Nombre', 'Precio' y 'Cantidad'.
+    """
     # MENSAJE DE BIENVENIDA
-    #-------------------------------------------------
 
     print("")
     print(azul + "============================================================")
@@ -29,9 +55,7 @@ def Agregar_Producto():
     print("")
 
 
-    #-------------------------------------------------
     # SOLICITAR DATOS DEL PRODUCTO
-    #-------------------------------------------------
 
     # Nombre del producto
     nombre = autenticacion_nombre("nombre del producto: ")
@@ -43,25 +67,19 @@ def Agregar_Producto():
     cantidad = error_number_int("cantidad del Producto: ")
 
 
-    #-------------------------------------------------
     # Calculo del costo total
-    #-------------------------------------------------
 
     costo_total = precio * cantidad
 
 
-    #-------------------------------------------------
     # Guardar en el Inventario     
-    #-------------------------------------------------
 
     producto = {"Nombre": nombre,"Precio": precio, "Cantidad": cantidad}
     
     Inventario_Dict.append(producto)
 
 
-    #-------------------------------------------------
     # MOSTRAR RESULTADOS
-    #-------------------------------------------------
 
     print(azul+"")
     print("= Producto actualizado exitosamente =")
