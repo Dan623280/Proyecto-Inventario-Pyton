@@ -1,4 +1,8 @@
+# Lista inventario
 from Lista import Inventario_Dict
+
+# Color
+from Color import rojo, reset
 
 #------------------------------
 # Calculo estadistica
@@ -14,17 +18,17 @@ def calcular_estadisticas():
     - Identifica el producto más caro.
     - Identifica el producto con mayor cantidad en stock.
 
-    Retorna:
-        dict | None:
-            - Retorna un diccionario con las estadísticas si hay datos.
-            - Retorna None si el inventario está vacío.
     """
 
     
     # VALIDAR SI EL INVENTARIO ESTÁ VACÍO
     
     if not Inventario_Dict:
-        print("Inventario vacío")
+
+        print(rojo + "--------------------" + reset)
+        print(rojo + "- Inventario vacío -" + reset)
+        print(rojo + "--------------------" + reset)
+        
         return
 
     

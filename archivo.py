@@ -27,9 +27,10 @@ def Guardar():
 
  
     if not Inventario_Dict:
-        
-        print(rojo + "El inventario está vacío, no hay datos para guardar." + reset)
-        
+
+        print(rojo + "-------------------------------------------------------" + reset)
+        print(rojo + "- El inventario está vacío, no hay datos para guardar -" + reset)
+        print(rojo + "-------------------------------------------------------" + reset)
         return
 
     ruta = "inventario.csv"

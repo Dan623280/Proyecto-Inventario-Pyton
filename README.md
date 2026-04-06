@@ -1,5 +1,16 @@
 # 🧾 Sistema de Inventario en Python
 
+
+-------------------------------------------------------------------------
+## Diagrama
+
+![alt text](<Diagrama sin título.drawio.png>)
+
+
+
+
+
+-------------------------------------------------------------------------
 ## 📌 Descripción
 
 Este programa Guarda y carga el inventario desde archivos CSV para conservar los datos entre sesiones, compartirlos y consultar estadísticas del negocio.
@@ -17,7 +28,7 @@ Para trabajar con esta versión desde tu computador, sigue estos pasos:
 ### 1. Clonar el repositorio
 
 ``` bash
-https://github.com/Dan623280/Proyecto-Inventario-Pyton.git
+git clone https://github.com/Dan623280/Proyecto-Inventario-Pyton.git
 ```
 
 ------------------------------------------------------------------------
