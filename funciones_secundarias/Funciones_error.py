@@ -1,5 +1,5 @@
 #importar colores
-from Color import rojo, reset
+from funciones_secundarias.Color import rojo, reset
 
 
 # -------------------------------------------------
@@ -54,7 +54,7 @@ def error_number_int(var):
             valor = int(input(f"Colocar {var}: "))
 
             # Verifica que no sea negativo
-            if valor >= 0:
+            if valor >= 1:
                 return valor
             else:
                 print(rojo + "Los valores negativos no son válidos" + reset)
@@ -88,7 +88,7 @@ def error_number_float(var):
             valor = int(valor)
 
             # Verifica que no sea negativo
-            if valor >= 0:
+            if valor >= 1:
                 return valor
             else:
                 print(rojo + "Los valores negativos no son válidos" + reset)

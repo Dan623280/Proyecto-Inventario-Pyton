@@ -3,16 +3,16 @@
 from Lista import Inventario_Dict
 
 # importa las funciones de error al ingresar dato
-from Funciones_error import error_string,error_number_int, error_number_float
+from funciones_secundarias.Funciones_error import error_string,error_number_int, error_number_float
 
 #Mostrar Datos
-from Mostrar import Mostrar
+from services.Mostrar import Mostrar
 
 # importa la utenticacion de un elemento para ver si se encuentra en la lista
-from autenticacion import autenticacion_indice
+from funciones_secundarias.autenticacion import autenticacion_indice
 
 #Traer colores
-from  Color import rojo, reset, verde
+from  funciones_secundarias.Color import rojo, reset, verde
 
 #------------------------------
 # Actualizar

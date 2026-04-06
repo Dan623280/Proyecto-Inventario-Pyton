@@ -2,7 +2,7 @@
 from Lista import Inventario_Dict
 
 # Color
-from Color import rojo, reset
+from funciones_secundarias.Color import rojo, reset
 
 #------------------------------
 # Calculo estadistica

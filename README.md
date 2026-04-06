@@ -4,7 +4,7 @@
 -------------------------------------------------------------------------
 ## Diagrama
 
-![alt text](<Diagrama sin título.drawio.png>)
+![alt text](img/<Diagrama sin título.drawio.png>)
 
 
 
@@ -28,7 +28,9 @@ Para trabajar con esta versión desde tu computador, sigue estos pasos:
 ### 1. Clonar el repositorio
 
 ``` bash
+
 git clone https://github.com/Dan623280/Proyecto-Inventario-Pyton.git
+
 ```
 
 ------------------------------------------------------------------------
@@ -36,7 +38,9 @@ git clone https://github.com/Dan623280/Proyecto-Inventario-Pyton.git
 ### 2. Entrar a la carpeta del proyecto
 
 ``` bash
+
 cd Proyecto-Inventario-Pyton
+
 ```
 
 ------------------------------------------------------------------------
@@ -52,7 +56,9 @@ git checkout feature/H3_Modulo-3
 ### 4. Descargar los archivos de la rama
 
 ``` bash
+
 git pull origin feature/H3_Modulo-3
+
 ```
 
 ------------------------------------------------------------------------
@@ -69,13 +75,13 @@ python app.py
 
 ## ▶️ Como utilizar el programa
 
-![alt text](image.png)
+![alt text](img/image.png)
 
 El programa al iniciar muestra un menu Dependiendo de la accion que el usuario desea realizar.
 
 ## Agregar producto
 
-![alt text](image-1.png)
+![alt text](img/image-1.png)
 
 Descripción:
 
@@ -111,7 +117,7 @@ Notas:
 
 ## Mostrar inventario
 
-![alt text](image-2.png)
+![alt text](img/image-2.png)
 
 Muestra en consola todos los productos almacenados en el inventario.
 
@@ -139,7 +145,7 @@ Notas:
 
 ## Buscar Producto
 
-![alt text](image-3.png)
+![alt text](img/image-3.png)
 
 Busca un producto por su nombre dentro del inventario.
 
@@ -149,7 +155,7 @@ Busca un producto por su nombre dentro del inventario.
 
 ## Actualizar Producto
 
-![alt text](image-4.png)
+![alt text](img/image-4.png)
 
 Actualiza la información de un producto existente en el inventario.
 
@@ -188,7 +194,7 @@ Notas:
 
 ## Eliminar Producto
 
-![alt text](image-5.png)
+![alt text](img/image-5.png)
 
 Elimina un producto del inventario utilizando su índice.
 
@@ -209,7 +215,7 @@ Flujo de la función:
 
 ## Calcular estadistica
 
-![alt text](image-12.png)
+![alt text](img/image-12.png)
 
 Calcula y muestra estadísticas del inventario.
 
@@ -233,7 +239,7 @@ Retorna:
 
 ## Guardar CSV
 
-![alt text](image-7.png)
+![alt text](img/image-7.png)
 
 Guarda el inventario en un archivo CSV.
 
@@ -255,13 +261,13 @@ Si S: reemplaza inventario por lo cargado.
 Si N: fusiona por nombre:
 Si un nombre ya existe, actualiza precio/cantidad u omite (define una política y muéstrala al usuario; por defecto, actualiza cantidad sumando y si el precio difiere, actualiza al nuevo).
 
-![alt text](image-8.png)
+![alt text](img/image-8.png)
 
-![alt text](image-9.png)
+![alt text](img/image-9.png)
 
-![alt text](image-10.png)
+![alt text](img/image-10.png)
 
-![alt text](image-11.png)
+![alt text](img/image-11.png)
 
 ------------------------------------------------------------------------
 ## 👤 Autor

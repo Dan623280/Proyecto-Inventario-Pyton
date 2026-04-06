@@ -1,31 +1,31 @@
 
 
 #Traer colores
-from Color import rojo, reset, verde
+from funciones_secundarias.Color import rojo, reset, verde
 
 #Mostrar menu y pedir Dato del menu
 from Menu import menu_principal
 
 #Guardar Registro
-from Registro import Agregar_Producto
+from services.Registro import Agregar_Producto
 
 #Mostrar Datos
-from Mostrar import Mostrar
+from services.Mostrar import Mostrar
 
 #importa la funcion de estadistica
-from Estadisticas import calcular_estadisticas
+from services.Estadisticas import calcular_estadisticas
 
 #importa la funcion para buscar
-from Buscar import buscar
+from services.Buscar import buscar
 
 #importar actualizar producto
-from actualizar import actualizar
+from services.actualizar import actualizar
 
 #importa la funcion para eliminar por indice
-from Eliminar import eliminar
+from services.Eliminar import eliminar
 
 #importa la funcion para Guardar y cargar
-from archivo import Guardar, cargar
+from services.archivo import Guardar, cargar
 
 #variable de confirmacion
 confirmo = "Y"

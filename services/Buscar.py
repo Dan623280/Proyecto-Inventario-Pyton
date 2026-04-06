@@ -2,13 +2,13 @@
 from Lista import Inventario_Dict
 
 # importa las funciones de error al ingresar dato
-from Funciones_error import error_string
+from funciones_secundarias.Funciones_error import error_string
 
 # importa la utenticacion de un elemento para ver si se encuentra en la lista
-from autenticacion import autenticacion
+from funciones_secundarias.autenticacion import autenticacion
 
 #Traer colores
-from  Color import rojo, reset
+from  funciones_secundarias.Color import rojo, reset
 
 #------------------------------
 # Buscar

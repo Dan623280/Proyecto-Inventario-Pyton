@@ -3,12 +3,12 @@
 from Lista import Inventario_Dict
 
 # Trae la Funciones que verifican si los datos son correctos
-from Funciones_error import error_string, error_number_int, error_number_float
+from funciones_secundarias.Funciones_error import error_string, error_number_int, error_number_float
 
 # Trae las variables de los colores
-from Color import azul, reset
+from funciones_secundarias.Color import azul, reset
 
-from autenticacion import autenticacion_nombre
+from funciones_secundarias.autenticacion import autenticacion_nombre
 
 
 #-------------------------------------------------

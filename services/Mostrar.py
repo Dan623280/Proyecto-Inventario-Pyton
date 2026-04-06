@@ -2,7 +2,7 @@
 from Lista import Inventario_Dict
 
 #importar colores
-from Color import rojo, reset
+from funciones_secundarias.Color import rojo, reset
 
 #-------------------------------------------------
 # Mostar datos de la lista

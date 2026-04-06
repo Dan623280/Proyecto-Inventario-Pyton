@@ -1,14 +1,14 @@
 #Mostrar Datos
-from Mostrar import Mostrar
+from services.Mostrar import Mostrar
 
 # importa la utenticacion de un elemento para ver si se encuentra en la lista
-from autenticacion import autenticacion_indice
+from funciones_secundarias.autenticacion import autenticacion_indice
 
 # Lista inventario
 from Lista import Inventario_Dict
 
 #Traer colores
-from Color import verde, reset, rojo
+from funciones_secundarias.Color import verde, reset, rojo
 
 #------------------------------
 # Eliminar

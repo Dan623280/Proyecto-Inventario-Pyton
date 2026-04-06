@@ -5,7 +5,7 @@
 # Agregar Producto
 #-------------------------------------------------
 
-from Registro import Agregar_Producto
+from services.Registro import Agregar_Producto
 
 """
     Registra un nuevo producto en el inventario.
@@ -41,7 +41,7 @@ from Registro import Agregar_Producto
 # Mostar datos de la lista
 #-------------------------------------------------
 
-from Mostrar import Mostrar
+from services.Mostrar import Mostrar
 
 """
     Muestra en consola todos los productos almacenados en el inventario.
@@ -73,7 +73,7 @@ from Mostrar import Mostrar
 #------------------------------
 
 #importa la funcion para buscar
-from Buscar import buscar
+from services.Buscar import buscar
 
 """
     Busca un producto por su nombre dentro del inventario.
@@ -86,7 +86,7 @@ from Buscar import buscar
 # Actualizar
 #------------------------------
 
-from actualizar import actualizar
+from services.actualizar import actualizar
 
 """
     Actualiza la información de un producto existente en el inventario.
@@ -121,7 +121,7 @@ from actualizar import actualizar
 #------------------------------
 # Eliminar
 #------------------------------
-from Eliminar import eliminar
+from services.Eliminar import eliminar
 
 """
     Elimina un producto del inventario utilizando su índice.
@@ -140,7 +140,7 @@ from Eliminar import eliminar
 #------------------------------
 
 #importa la funcion de estadistica
-from Estadisticas import calcular_estadisticas
+from services.Estadisticas import calcular_estadisticas
 
 """
     Calcula y muestra estadísticas del inventario.

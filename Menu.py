@@ -1,8 +1,8 @@
 #importar colores
-from Color import azul,reset
+from funciones_secundarias.Color import azul,reset
 
 #llamar para detectar error
-from Funciones_error import error_number_int
+from funciones_secundarias.Funciones_error import error_number_int
 
 #-------------------------------------------------
 # Menu
