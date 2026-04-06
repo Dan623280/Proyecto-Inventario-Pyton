@@ -25,9 +25,7 @@ from actualizar import actualizar
 
 from Eliminar import eliminar
 
-from cargar_inventario import cargar
-
-from guardar_csv import Guardar
+from archivo import Guardar, cargar
 
 #variable de confirmacion
 confirmo = "Y"
@@ -68,12 +66,8 @@ while confirmo == "Y":
 
         #ejecuta la funcion de estadisticas
 
-        stats = calcular_estadisticas(Inventario_Dict)
+        calcular_estadisticas()
 
-        if stats:
-            print(stats)
-        else:
-            print("Inventario vacío")
             
     #En desarrollo
     elif numero == 7:

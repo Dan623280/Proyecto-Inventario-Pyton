@@ -9,6 +9,7 @@ from Color import verde, reset
 
 def eliminar():
 
+    """Esta funcion pide un indice y elimina los datos segun el indice"""
     print("")
     print("Coloque el indice del producto que quiere Eliminar")
     print("")

@@ -1,4 +1,5 @@
 Nombre,Precio,Cantidad
-sapo,200,5
-Luis,20000,2
-Zapato,3000,3
+sapo,200.0,5
+Luis,20000.0,2
+Zapato,3000.0,3
+Juan,3200,2
